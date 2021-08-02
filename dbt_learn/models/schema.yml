@@ -2,8 +2,10 @@ version: 2
 
 models:
   - name: customers
+    description: "{{ doc('customers') }}"
     columns:
       - name: customer_id
+        description: primary key of the model
         tests:
           - unique
           - not_null
